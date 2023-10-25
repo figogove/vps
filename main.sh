@@ -285,6 +285,11 @@ function download_config(){
     7z e  /tmp/menu-master.zip -o/tmp/menu/ >/dev/null 2>&1
     chmod +x /tmp/menu/*
     mv /tmp/menu/* /usr/sbin/
+    mkdir -p /etc/ssh
+    mkdir -p /etc/vmx
+    mkdir -p /etc/vls
+    mkdir -p /etc/tr
+    mkdir -p /etc/ss
 
 
     cat >/root/.profile <<EOF
@@ -302,7 +307,7 @@ chmod 644 /root/.profile
 
 echo "0 0 * * * root xp" >/etc/crontab
 echo "*/1 * * * * root clearlog" >/etc/crontab
-echo "0 0 * * * root reboot" >/etc/crontab
+echo "0 5 * * * root reboot" >/etc/crontab
 service cron restart
 
 cat >/etc/systemd/system/rc-local.service <<EOF
