@@ -3,7 +3,7 @@ clear
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
-REPO="https://raw.githubusercontent.com/heruhendri/scupdate/main/"
+REPO="https://raw.githubusercontent.com/fihogove/vps/main/"
 CYAN='\033[0;96m'        # Cyan
 
 BG="\E[44;1;39m"
@@ -26,7 +26,7 @@ echo -e "     •> Script By @GbtTapiPngnSndiri <•" | lolcat
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "  ${BG} >>> THANKS TO hendr.store <<< ${NC}" 
+echo -e "  ${BG} >>> THANKS TO D.res <<< ${NC}" 
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
