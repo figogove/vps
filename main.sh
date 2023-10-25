@@ -43,7 +43,7 @@ if [[ -n "$izin" ]]; then
     echo -e ""
     echo -e "${BlueCyan} ————————————————————————————————————————"
     echo -e "      ${ungu}Terimakasih sudah menggunakan-"
-    echo -e "       Script Credit by RVPN STORES"
+    echo -e "       Script Credit by D.res"
     echo -e " ${BlueCyan}————————————————————————————————————————${Suffix}"
     echo -e ""
     exit 0
