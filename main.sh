@@ -72,14 +72,14 @@ TANGGAL=$(date '+%Y-%m-%d')
 TIMES="10"
 NAMES=$(whoami)
 IMP="wget -q -O"    
-CHATID="-5918346486"
+CHATID="-1001620756682"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
 ISP=$(wget -qO- ipinfo.io/org)
 CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
-KEY="6801918783:AAEy1eZNYXnjiMB5bwL6hFD6sHdEz9noDp0"
+KEY="6516463510:AAHCoY6aW7Rz_FdxGaMRyttr78gyMB4ZYgA"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 REPO="https://raw.githubusercontent.com/figogove/vps/main/"
 CDNF="https://raw.githubusercontent.com/figogove/vps/main/"
@@ -285,7 +285,7 @@ print_success "Xray C0re"
 ### Pasang OpenVPN
 function install_ovpn(){
     print_install "Memasang modul Openvpn"
-    source <(curl -sL ${REPO}openvpn/openvpn)
+    source <(curl -sL ${REPO}openvpn/openvpn.sh)
     wget -O /etc/pam.d/common-password "${REPO}openvpn/common-password" >/dev/null 2>&1
     chmod +x /etc/pam.d/common-password
     # > BadVPN
