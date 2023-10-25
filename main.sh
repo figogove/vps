@@ -411,7 +411,7 @@ touch /root/.install.log
 cat >/root/tmp <<-END
 #!/bin/bash
 #vps
-### gove $TANGGAL $MYIP
+### D.res $TANGGAL $MYIP
 END
 ####
 RIZKIHDYTPROJECT() {
