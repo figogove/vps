@@ -285,7 +285,7 @@ print_success "Xray C0re"
 ### Pasang OpenVPN
 function install_ovpn(){
     print_install "Memasang modul Openvpn"
-    source <(curl -sL ${REPO}openvpn/openvpn.sh)
+    source <(curl -sL ${REPO}openvpn/openvpn)
     wget -O /etc/pam.d/common-password "${REPO}openvpn/common-password" >/dev/null 2>&1
     chmod +x /etc/pam.d/common-password
     # > BadVPN
