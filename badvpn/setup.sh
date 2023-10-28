@@ -1,11 +1,10 @@
  # // Installing UDP Mini
-REPO='https://raw.githubusercontent.com/figogove/vip/main/'
 mkdir -p /usr/local/kyt/
-wget -q -O /usr/local/kyt/badvpn "${REPO}badvpn/udp-mini"
+wget -q -O /usr/local/kyt/badvpn "https://raw.githubusercontent.com/figogove/vip/main/badvpn/udp-mini"
 chmod +x /usr/local/kyt/badvpn
-wget -q -O /etc/systemd/system/badvpn1.service "${REPO}badvpn/udp-mini-1.service"
-wget -q -O /etc/systemd/system/badvpn2.service "${REPO}badvpn/udp-mini-2.service"
-wget -q -O /etc/systemd/system/badvpn3.service "${REPO}badvpn/udp-mini-3.service"
+wget -q -O /etc/systemd/system/badvpn1.service "https://raw.githubusercontent.com/figogove/vip/main/badvpn/udp-mini-1.service"
+wget -q -O /etc/systemd/system/badvpn2.service "https://raw.githubusercontent.com/figogove/vip/main/badvpn/udp-mini-2.service"
+wget -q -O /etc/systemd/system/badvpn3.service "https://raw.githubusercontent.com/figogove/vip/main/badvpn/udp-mini-3.service"
 systemctl disable badvpn1
 systemctl stop badvpn1
 systemctl enable badvpn1
